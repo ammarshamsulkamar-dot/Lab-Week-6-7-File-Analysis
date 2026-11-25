@@ -145,18 +145,6 @@ Different operating systems set a different **default initial TTL**, so the TTL 
 | 128 | Windows |
 | 255 | Network device (Cisco router / *nix appliance) |
 
-**Image 1 — TTL = 64 → Linux.** The ping replies show `ttl=64`, and the host is confirmed as Fedora 34.
-
-![TTL 64 Linux](images/q4-ttl64-linux.png)
-
-**Image 2 — TTL = 255 → Network device (router).** The device is sending ICMP "Time-to-live exceeded" messages with an IP TTL of 255. (The `TTL = 1` shown *inside* the quoted packet is just the traceroute probe that expired — it is not the OS fingerprint.)
-
-![TTL 255 router](images/q4-ttl255-router.png)
-
-**Image 3 — TTL = 128 → Windows.** The replies show `ttl=128`, the Windows default.
-
-![TTL 128 Windows](images/q4-ttl128-windows.png)
-
 ---
 
 ## Question 5 — Analyse the Nessus file (Ghostcat)
